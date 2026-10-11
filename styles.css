@@ -49,3 +49,38 @@ body{background:radial-gradient(circle at 12% 8%,rgba(89,185,255,.09),transparen
 .event-panel{box-shadow:0 30px 90px rgba(0,0,0,.25),0 0 50px rgba(246,189,74,.05)}
 @media(max-width:1100px){.result-declared-badge{margin:18px 0 0}.section-heading{align-items:flex-start}.result-card.first{transform:none}.result-card.first:hover{transform:translateY(-7px)}}
 @media(max-width:760px){.result-declared-badge{width:max-content;max-width:100%;white-space:normal}.result-declared-badge small{font-size:.58rem}.results-section:before{display:none}}
+
+
+/* IOCM 2026 — main competition announcement */
+.event-panel{grid-template-columns:minmax(0,1.05fr) minmax(320px,.95fr);gap:36px;padding:clamp(28px,5vw,64px)}
+.event-copy{position:relative;z-index:2}
+.event-date-label{display:inline-flex;align-items:center;gap:9px;margin:0 0 22px;padding:9px 13px;border:1px solid rgba(246,189,74,.32);border-radius:999px;background:rgba(246,189,74,.07);color:#f8d98e;font-size:.7rem;font-weight:800;letter-spacing:.09em}
+.event-date-dot{width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 15px var(--gold)}
+.event-copy h2{font-size:clamp(2.5rem,4.4vw,4.7rem);line-height:.98}
+.event-gradient{background:linear-gradient(90deg,#f6bd4a,#fff0b5 48%,#59b9ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.event-copy p:not(.eyebrow){line-height:1.8}
+.event-message{margin:25px 0;padding:20px 22px;border:1px solid rgba(89,185,255,.18);border-left:3px solid var(--gold);border-radius:12px;background:linear-gradient(110deg,rgba(89,185,255,.055),rgba(246,189,74,.045))}
+.event-message-label{color:var(--cyan);font-size:.68rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+.event-message p{margin:10px 0 0!important}
+.event-message .event-wish{color:#f2dca7!important}
+.event-visual{position:relative;min-height:430px;display:grid;place-items:center}
+.event-countdown-card{position:relative;z-index:3;width:min(100%,470px);padding:26px;border:1px solid rgba(246,189,74,.3);border-radius:18px;background:linear-gradient(145deg,rgba(10,27,48,.96),rgba(3,10,22,.94));box-shadow:0 28px 80px rgba(0,0,0,.35),0 0 45px rgba(89,185,255,.08);backdrop-filter:blur(18px)}
+.countdown-kicker{display:block;color:var(--cyan);font-size:.66rem;font-weight:800;letter-spacing:.16em}
+.countdown-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin:23px 0}
+.countdown-grid>div{padding:15px 5px;border:1px solid rgba(255,255,255,.08);border-radius:11px;background:rgba(255,255,255,.025);text-align:center}
+.countdown-grid strong{display:block;color:#fff;font:700 clamp(1.55rem,3vw,2.5rem) "Space Grotesk";letter-spacing:-.06em;font-variant-numeric:tabular-nums}
+.countdown-grid span{display:block;margin-top:5px;color:var(--muted);font-size:.65rem}
+.countdown-divider{height:1px;background:linear-gradient(90deg,transparent,rgba(246,189,74,.4),transparent);margin:20px 0}
+.countdown-location{display:flex;align-items:center;gap:12px}
+.location-symbol{display:grid;place-items:center;width:42px;height:42px;border:1px solid rgba(246,189,74,.25);border-radius:12px;color:var(--gold);font-size:1.4rem}
+.countdown-location strong,.countdown-location small{display:block}
+.countdown-location strong{font:600 1rem "Space Grotesk"}
+.countdown-location small{margin-top:3px;color:var(--muted);font-size:.73rem}
+.countdown-live-message{grid-column:1/-1;padding:18px 4px;text-align:center}
+.countdown-live-message strong,.countdown-live-message span{display:block}
+.countdown-live-message strong{color:var(--gold);font:700 1.6rem "Space Grotesk"}
+.countdown-live-message span{color:var(--muted);font-size:.8rem;margin-top:5px}
+.event-visual .event-orbit{position:absolute;inset:0;opacity:.45;pointer-events:none}
+.event-visual .planet{width:120px;height:120px}
+@media(max-width:900px){.event-panel{grid-template-columns:1fr}.event-visual{min-height:390px}.event-visual .event-orbit{right:auto}}
+@media(max-width:480px){.event-countdown-card{padding:18px}.countdown-grid{gap:5px}.countdown-grid>div{padding:12px 2px}.countdown-grid strong{font-size:1.45rem}.event-date-label{font-size:.61rem;letter-spacing:.04em}.event-message{padding:16px}}
