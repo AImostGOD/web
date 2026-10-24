@@ -84,3 +84,10 @@ body{background:radial-gradient(circle at 12% 8%,rgba(89,185,255,.09),transparen
 .event-visual .planet{width:120px;height:120px}
 @media(max-width:900px){.event-panel{grid-template-columns:1fr}.event-visual{min-height:390px}.event-visual .event-orbit{right:auto}}
 @media(max-width:480px){.event-countdown-card{padding:18px}.countdown-grid{gap:5px}.countdown-grid>div{padding:12px 2px}.countdown-grid strong{font-size:1.45rem}.event-date-label{font-size:.61rem;letter-spacing:.04em}.event-message{padding:16px}}
+
+/* Schedule update and safety notice */
+.event-date-label{color:#ffe2a1;border-color:rgba(246,189,74,.42);background:rgba(246,189,74,.09)}
+.event-message{border-left-color:#f6bd4a}
+.event-message-label{color:#f6d27f}
+.event-message .event-wish{font-weight:500}
+.event-copy strong{color:#ffe2a1}
