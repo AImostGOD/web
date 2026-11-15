@@ -91,3 +91,22 @@ body{background:radial-gradient(circle at 12% 8%,rgba(89,185,255,.09),transparen
 .event-message-label{color:#f6d27f}
 .event-message .event-wish{font-weight:500}
 .event-copy strong{color:#ffe2a1}
+
+/* IOCM 2026 results announcement refresh */
+.winner-distinction{position:absolute;right:22px;bottom:22px;color:var(--gold);font:800 .9rem "Space Grotesk";letter-spacing:.14em}
+.winner-distinction sup{font-size:.65em;vertical-align:super}
+.winner-distinction.silver{color:#d9e4ef}
+.winner-distinction.bronze{color:#e9a76c}
+.ceremony-panel{position:relative;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(280px,.95fr);gap:36px;align-items:center;overflow:hidden;padding:clamp(28px,5vw,64px);border:1px solid rgba(246,189,74,.24);border-radius:22px;background:radial-gradient(circle at 78% 48%,rgba(246,189,74,.13),transparent 30%),linear-gradient(135deg,#091a30,#030b18);box-shadow:var(--shadow)}
+.ceremony-copy{position:relative;z-index:2;max-width:650px}
+.ceremony-copy h2{font-size:clamp(2.7rem,5vw,5rem);line-height:.95;letter-spacing:-.06em;margin:0 0 20px}
+.ceremony-copy>p:not(.eyebrow){color:var(--muted);line-height:1.8;max-width:580px}
+.ceremony-visual{min-height:360px;display:grid;place-items:center;position:relative}
+.seoul-orbit{width:min(330px,75vw);aspect-ratio:1;border:1px solid rgba(246,189,74,.32);border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;background:radial-gradient(circle,rgba(246,189,74,.12),rgba(89,185,255,.035) 48%,transparent 70%);box-shadow:0 0 0 22px rgba(246,189,74,.025),0 0 0 48px rgba(89,185,255,.025),0 0 90px rgba(246,189,74,.1)}
+.seoul-orbit:before,.seoul-orbit:after{content:"";position:absolute;inset:12%;border:1px solid rgba(89,185,255,.18);border-radius:50%;transform:rotate(55deg) scaleX(1.5)}
+.seoul-orbit:after{transform:rotate(-55deg) scaleX(1.5);border-color:rgba(246,189,74,.2)}
+.seoul-monogram{position:relative;z-index:1;font:700 clamp(2.2rem,5vw,3.5rem) "Space Grotesk";letter-spacing:.08em;color:#f8d98e;text-align:center;text-shadow:0 0 30px rgba(246,189,74,.2)}
+.seoul-monogram small{display:block;font:700 .65rem "DM Sans";letter-spacing:.22em;color:#a9bfd6;margin-top:7px}
+.seoul-star{position:absolute;z-index:2;top:12%;right:18%;font-size:2rem;color:var(--gold);text-shadow:0 0 24px var(--gold)}
+.seoul-caption{position:absolute;z-index:2;bottom:20%;font-size:.6rem;font-weight:800;letter-spacing:.2em;color:var(--cyan)}
+@media(max-width:760px){.ceremony-panel{grid-template-columns:1fr}.ceremony-visual{min-height:300px}.winner-distinction{position:static;margin-top:16px}}
